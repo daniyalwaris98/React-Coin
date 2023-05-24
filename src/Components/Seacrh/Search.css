@@ -1,0 +1,21 @@
+h1 {
+  text-transform: uppercase;
+  font-size: 248%;
+  font-weight: 850;
+  line-height: 20px;
+  letter-spacing: 3px;
+  color: #0c2440;
+}
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+  padding: 8px 50px;
+  background-color: #4d7695;
+}
+input {
+  padding: 12px 45px;
+  border-radius: 20%;
+  text-transform: capitalize;
+}
