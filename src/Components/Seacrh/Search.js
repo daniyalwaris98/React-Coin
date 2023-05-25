@@ -18,7 +18,7 @@ export function Search() {
       <div className="searchbar">
         <h1>List Of Coins</h1>
 
-        <form onSubmit={clickEvent}>
+        <form onSubmit={clickEvent} autoComplete="off">
           <input
             id="search"
             onChange={HandleChange}

@@ -15,6 +15,7 @@
 }
 .inner-container {
   min-width: 80%;
+  min-height: 350px;
   margin: 20px 100px;
   padding-top: 40px;
   display: flex;
