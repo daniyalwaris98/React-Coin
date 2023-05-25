@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { FetchData } from "../Fetchdata/FetchData";
 import "./Search.css";
+import icon from "../Shared/search-icon.png";
 
 export function Search() {
   const [term, setTerm] = useState("");
-  console.log("Onchange", term);
 
   const clickEvent = (e) => {
     e.preventDefault();
@@ -20,14 +20,18 @@ export function Search() {
 
         <form onSubmit={clickEvent}>
           <input
+            id="search"
             onChange={HandleChange}
             placeholder="Search for digital coins "
             autoCapitalize="words"
             type="text"
           ></input>
+          <button id="Btn">
+            <img src={icon}></img>
+          </button>
         </form>
       </div>
-      <FetchData term={term} />
+      <FetchData term={term.trimStart()} />
     </div>
   );
 }

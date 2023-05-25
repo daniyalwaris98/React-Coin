@@ -1,6 +1,6 @@
 .container {
   margin: auto;
-  padding: 60px;
+  padding: 40px 60px;
   align-content: center;
 }
 
@@ -15,22 +15,24 @@
 }
 .inner-container {
   min-width: 80%;
-  margin: 10px 100px;
+  margin: 20px 100px;
+  padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: start;
   align-items: center;
   row-gap: 12px;
-  gap: 10px;
+  gap: 15px;
 }
 .card {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 15px;
-  width: calc(33% - 20px);
-  max-width: calc(33% - 20px);
+  gap: 12px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  min-width: calc(33% - 30px);
   text-align: left;
   padding: 6px 0px;
   border: 1px solid;
@@ -64,7 +66,7 @@ img {
 
 span {
   display: block;
-  padding: 0px 10px;
+  padding: 2.5px 10px;
   transition: all 0.2s ease;
   font-weight: 450;
 }

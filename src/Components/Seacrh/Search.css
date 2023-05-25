@@ -4,7 +4,7 @@ h1 {
   font-weight: 850;
   line-height: 20px;
   letter-spacing: 3px;
-  color: #0c2440;
+  color: #fdfeff;
 }
 .searchbar {
   display: flex;
@@ -15,7 +15,53 @@ h1 {
   background-color: #4d7695;
 }
 input {
-  padding: 12px 45px;
-  border-radius: 20%;
+  background-color: #f1f1f1;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  padding: 12px 110px 12px 20px;
+  font-size: 13px;
+  letter-spacing: 1px;
   text-transform: capitalize;
+  transition: all 0.4s ease-in-out;
+  border: 2px solid #832298;
+  border-left: none;
+}
+/* input:hover, */
+input:focus {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 2px solid #a33dba;
+
+  border-left: none;
+  padding-left: 10px;
+}
+form {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: stretch;
+  align-items: center;
+}
+button {
+  padding-left: 10px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  align-self: stretch;
+  border: 2px solid #8d35a1;
+  border-right: none;
+
+  transition: all 0.4s ease-in-out;
+}
+/* form:hover #Btn, */
+#search:focus + #Btn {
+  padding-left: 5px;
+
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  border: 2px solid #a33dba;
+
+  border-right: none;
 }
